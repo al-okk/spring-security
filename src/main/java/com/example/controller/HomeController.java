@@ -30,9 +30,14 @@ public class HomeController {
 		return "about";
 	}
 	
-	@GetMapping("/home")
+	@GetMapping("dev/home")
 	public String home() {
 		return "home";
+	}
+	
+	@GetMapping("user/profile")
+	public String profile() {
+		return "profile";
 	}
 	
 	@GetMapping("/login")
